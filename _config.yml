@@ -29,7 +29,7 @@ github_username:  jekyll
 
 # Build settings
 #theme: minima # github pages doesn't support jekyll-theme-console
-theme: jekyll-theme-console
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   

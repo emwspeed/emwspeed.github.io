@@ -1,0 +1,247 @@
+/*body{font-family:Georgia,"Times New Roman",Times,serif;margin:0;padding:0;background-color:#F3F3F3;}
+        #divbodyholder{padding:5px;background-color:#DDD;width:100%;max-width:874px;margin:24px auto;}
+        #divbody{border:solid 1px #ccc;background-color:#fff;padding:0px 48px 24px 48px;top:0;}
+        .headerholder{background-color:#f9f9f9;border-top:solid 1px #ccc;border-left:solid 1px #ccc;border-right:solid 1px #ccc;}
+        .header{width:100%;max-width:800px;margin:0px auto;padding-top:24px;padding-bottom:8px;}
+        .content{margin-bottom:5%;}
+        .nomargin{margin:0;}
+        .description{margin-top:10px;border-top:solid 1px #666;padding:10px 0;}
+        h3{font-size:20pt;width:100%;font-weight:bold;margin-top:32px;margin-bottom:0;}
+        .clear{clear:both;}
+        #footer{padding-top:10px;border-top:solid 1px #666;color:#333333;text-align:center;font-size:small;font-family:"Courier New","Courier",monospace;}
+        a{text-decoration:none;color:#003366 !important;}
+        a:visited{text-decoration:none;color:#336699 !important;}
+        blockquote{background-color:#f9f9f9;border-left:solid 4px #e9e9e9;margin-left:12px;padding:12px 12px 12px 24px;}
+        blockquote img{margin:12px 0px;}
+        blockquote iframe{margin:12px 0px;}
+*/
+/* 
+   Written in 2019 by Scott Nesbitt
+
+   To the extent possible under law, the author(s) have dedicated all 
+   copyright and related and neighboring rights to this software to the 
+   public domain worldwide. This software is distributed without any 
+   warranty.
+
+   You should have received a copy of the CC0 Public Domain Dedication 
+   along with this software. If not, see 
+   http://creativecommons.org/publicdomain/zero/1.0
+*/
+
+body {
+  color: #444;
+  font-family: Ubuntu, "Liberation Sans", sans-serif;
+  font-size: 13pt;
+  line-height: 1.5;
+  padding: 1em;
+  margin: auto;
+  max-width: 55em;
+  background: #fefefe;
+}
+
+p, li {font-size: 13pt;
+   font-family: sans-serif;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0b0080;
+}
+
+a:hover {
+  color: #06e;
+}
+
+a:active {
+  color: #faa700;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+p {
+  margin: 1em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  line-height: 125%;
+  margin-top: 2em;
+  font-weight: normal;
+}
+
+h2, h2.post-title {
+   font-family: sans-serif;     
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+blockquote {
+  color: #666666;
+  margin: 0;
+  padding-left: 3em;
+  border-left: 0.5em #EEE solid;
+}
+
+/* hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  /* border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee;*/
+  margin: 1em 0;
+  padding: 0;
+} */
+
+hr {
+  border: 3px solid #3399ff;
+  display: block;
+}}
+
+pre, code, kbd, samp {
+  color: #000;
+  font-family: monospace, monospace;
+  font-size: 0.98em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+li p:last-child {
+  margin-bottom: 0;
+}
+
+ul ul, ol ol {
+  margin: .3em 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+figure {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+figure img {
+  border: none;
+  margin: 0 auto;
+}
+
+table {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: .2em 1em;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+table td {
+  padding: .2em 1em;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.author {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+footer {
+        display: none;
+        visibility: hidden;
+}
+
+.marginnote { float: right;
+                     clear: right;
+                     margin-right: -60%;
+                     width: 50%;
+                     margin-top: 0;
+                     margin-bottom: 0;
+                     font-size: 0.8rem;
+                     line-height: 1.3;
+                     vertical-align: baseline;
+                     position: relative; }
+
+.marginnote:before { font-family: sans-serif;
+                     position: relative;
+                     vertical-align: baseline; }
+
+blockquote .marginnote { margin-right: -82%;
+                         min-width: 59%;
+                         text-align: left; }

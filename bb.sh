@@ -28,16 +28,17 @@ global_variables() {
     global_software_version="2.10"
 
     # Blog title
-    global_title="Ram"
+    global_title="RAT"
     # The typical subtitle for each blog
-    global_description="musings, so-called poetry, thoughts, shambles"
+    global_description="RAT (Random Access Thoughts) - musings, so-called poetry, thoughts, shambles"
     # The public base URL for this blog
     global_url="http://emwspeed.github.io/"
 
     # Your name
-    global_author="Light"
+    global_author="Nerve"
     # You can use twitter or facebook or anything for global_author_url
-    global_author_url="http://emwspeed.github.io/" 
+    # Maybe for a neocities web page?
+    global_author_url="" 
     # Your email
     global_email=""
 
@@ -990,7 +991,7 @@ delete_includes() {
 create_css() {
     # To avoid overwriting manual changes. However it is recommended that
     # this function is modified if the user changes the blog.css file
-    (( ${#css_include[@]} > 0 )) && return || css_include=('main.css' 'blog.css')
+    (( ${#css_include[@]} > 0 )) && return || css_include=('main-dark.css' 'blog.css')
     if [[ ! -f blog.css ]]; then 
         # blog.css directives will be loaded after main.css and thus will prevail
         echo '#title{font-size: x-large;}
